@@ -15,7 +15,7 @@ const server = http.createServer((req,res)=>{
         res.statusCode = 200;
         res.setHeader("Content-type", "application/json");
         const person2 = new Person("Nimal", 25);
-        res.end(person2.greetings());
+        res.end(person2.greetings())
     }
     else{
         res.statusCode = 404;
